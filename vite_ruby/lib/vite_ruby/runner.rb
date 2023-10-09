@@ -27,13 +27,19 @@ private
 
   # Internal: Returns an Array with the command to run.
   def command_for(args)
-    [config.to_env(env)].tap do |cmd|
+    env_args = config.to_env(env)
+
+    [env_args].tap do |cmd|
       args = args.clone
+
       cmd.push('node', '--inspect-brk') if args.delete('--inspect')
       cmd.push('node', '--trace-deprecation') if args.delete('--trace_deprecation')
       cmd.push(*vite_executable)
       cmd.push(*args)
       cmd.push('--mode', config.mode) unless args.include?('--mode') || args.include?('-m')
+      if (config_path = env_args["VITE_RUBY_JS_CONFIG_PATH"])
+        cmd.push("--config", config_path)
+      end
     end
   end
 

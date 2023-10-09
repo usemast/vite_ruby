@@ -1,5 +1,7 @@
 {
-  "additionalEntrypoints": ["~/{assets,fonts,icons,images}/**/*"],
+  "additionalEntrypoints": [
+    "~/{assets,fonts,icons,images}/**/*"
+  ],
   "assetHost": null,
   "assetsDir": "assets",
   "autoBuild": false,
