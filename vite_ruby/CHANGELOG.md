@@ -1,3 +1,31 @@
+# [3.5.0](https://github.com/ElMassimo/vite_ruby/compare/vite_ruby@3.4.0...vite_ruby@3.5.0) (2023-11-16)
+
+
+### Bug Fixes
+
+* prevent clean from deleting assets referenced in the manifests ([8a581c1](https://github.com/ElMassimo/vite_ruby/commit/8a581c15ff480049bbb14dab1b5a3497308521b5))
+
+
+### Features
+
+* use vite 5 in new installations ([f063f28](https://github.com/ElMassimo/vite_ruby/commit/f063f283f939d15b3c48c1a9b6efcd589fafbaf1))
+
+
+
+# [3.4.0](https://github.com/ElMassimo/vite_ruby/compare/vite_ruby@3.3.4...vite_ruby@3.4.0) (2023-11-16)
+
+
+### Bug Fixes
+
+* **breaking:** check for any existing manifest path before cleaning ([c450483](https://github.com/ElMassimo/vite_ruby/commit/c4504839e11006d50d6503288469cb3de0c6a9cd))
+
+
+### Features
+
+* add support for vite 5, which changed default manifest path ([818132a](https://github.com/ElMassimo/vite_ruby/commit/818132a07af3f17ba27ae09c44fcd59029064238))
+
+
+
 ## [3.3.4](https://github.com/ElMassimo/vite_ruby/compare/vite_ruby@3.3.3...vite_ruby@3.3.4) (2023-06-27)
 
 
