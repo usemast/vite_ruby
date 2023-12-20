@@ -18,7 +18,7 @@ class ViteRuby::CLI::Vite < Dry::CLI::Command
 
   def call(mode:, args: [], clobber: false, js_config_path: nil, **boolean_opts)
     ViteRuby.env['VITE_RUBY_MODE'] = mode
-    ViteRuby.env['VITE_RUBY_JS_CONFIG_PATH'] = js_config_path
+    ViteRuby.env['VITE_RUBY_JS_CONFIG_PATH'] = js_config_path if js_config_path
 
     ViteRuby.commands.clobber if clobber
 
